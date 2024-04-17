@@ -57,7 +57,11 @@ int main() {
 
         renderScale = std::min(GetScreenHeight() / (float) canvas.texture.height, // Calculates how big or small the canvas has to be rendered.
                                GetScreenWidth()  / (float) canvas.texture.width); // Priority is given to the smaller side.
+<<<<<<< HEAD
         //renderScale = floorf(renderScale);
+=======
+        //renderScale = floor(renderScale);
+>>>>>>> 860663839f3b9fbedf09c2aa76e9f74737a80090
         if (renderScale < 1) renderScale = 1; // Ensure that scale is at least 1.
         renderRec.width = canvas.texture.width * renderScale;
         renderRec.height = canvas.texture.height * renderScale;
